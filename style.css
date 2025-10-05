@@ -267,9 +267,11 @@ footer {
 
 /* ...existing code... */
 .certificates-scroll {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     overflow-x: auto;
-    gap: 24px;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
     padding: 16px 0;
     scrollbar-width: thin;
     scrollbar-color: #00ffe7 #222;
@@ -303,7 +305,7 @@ footer {
 .certificates-scroll::-webkit-scrollbar {
     height: 8px;
 }
-.certificates-scroll::-webkit-scrollbar-thumb {
+.certificates-grid-scroll::-webkit-scrollbar-thumb {
     background: linear-gradient(90deg, #00ffe7, #ff00cc);
     border-radius: 4px;
 }
