@@ -219,7 +219,7 @@ nav ul li a:hover {
 .hire-btn, .vcard-btn {
     margin: 15px 10px 0;
     padding: 10px 20px;
-    background: #0ff;
+    background: rgb(7, 243, 243);
     color: #0d0d0d;
     border: none;
     cursor: pointer;
@@ -263,3 +263,48 @@ footer {
         justify-content: center;
     }
 }
+
+
+/* ...existing code... */
+.certificates-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 24px;
+    padding: 16px 0;
+    scrollbar-width: thin;
+    scrollbar-color: #00ffe7 #222;
+}
+
+.cert-badge {
+    flex: 0 0 auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #00ffe7;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: rgba(30,30,30,0.7);
+    padding: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.cert-badge img {
+    height: 120px;
+    width: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.cert-badge:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 24px #00aeff, 0 0 32px #00ffe7;
+    z-index: 2;
+}
+
+.certificates-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+.certificates-scroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #00ffe7, #ff00cc);
+    border-radius: 4px;
+}
+/* ...existing code... */
