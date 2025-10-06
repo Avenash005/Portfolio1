@@ -308,3 +308,106 @@ footer {
     background: linear-gradient(90deg, #00ffe7, #ff00cc);
     border-radius: 4px;
 }
+
+.linkedin-badge{
+    flex: 0 0 auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #00ffe7;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: rgba(30,30,30,0.7);
+    padding: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.linkedin-badge img {
+    height: 120px;
+    width: auto;
+    border-radius: 8px;
+    display: block;
+}
+.linkedin-badge:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 24px #00aeff, 0 0 32px #00ffe7;
+    z-index: 2;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background: rgba(20, 20, 20, 0.9);
+}
+
+body.dark-mode .skill-item {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .skill-item:hover {
+    background: rgba(0, 255, 255, 0.2);
+}
+
+body.dark-mode .skill-info-box {
+    background: rgba(0, 255, 255, 0.1);
+    border-color: #00e5ff;
+    color: #00e5ff;
+}
+body.dark-mode .project-card {
+    background: rgba(255, 255, 255, 0.1);
+}
+body.dark-mode .project-card:hover {
+    background: rgba(0, 255, 255, 0.2);
+}
+body.dark-mode footer {
+    background: rgba(20, 20, 20, 0.9);
+}
+body.dark-mode .cert-badge {
+    background: rgba(50,50,50,0.7);
+}
+body.dark-mode .linkedin-badge {
+    background: rgba(50,50,50,0.7);
+}
+body.dark-mode .cert-badge:hover {
+    box-shadow: 0 0 24px #00aeff, 0 0 32px #00ffe7;
+}
+body.dark-mode .linkedin-badge:hover {
+    box-shadow: 0 0 24px #00aeff, 0 0 32px #00ffe7;
+}
+/* Media Queries */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-info-box {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #00ffe7,);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+    background: #222;
+}
