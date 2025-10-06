@@ -265,7 +265,6 @@ footer {
 }
 
 
-/* ...existing code... */
 .certificates-scroll {
     display: grid;
     grid-auto-flow: column;
@@ -309,4 +308,3 @@ footer {
     background: linear-gradient(90deg, #00ffe7, #ff00cc);
     border-radius: 4px;
 }
-/* ...existing code... */
